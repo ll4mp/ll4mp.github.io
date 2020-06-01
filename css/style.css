@@ -1,0 +1,179 @@
+*{
+	outline: none!important;
+}
+body{
+    background-color: rgb(29, 29, 29)!important;
+    box-sizing: border-box!important;
+    margin: 0!important;
+	padding: 0!important;
+	overflow-x: hidden!important;
+	outline: none!important;
+}
+/* Cores da página*/
+.primary-color{
+    background-color: rgb(29, 29, 29)!important;
+  
+}
+
+/* Fim cores da página */
+a,
+a:hover,
+a:active,
+.card-header
+{
+    text-decoration: none!important;
+    color: rgb(255, 255, 255)!important;
+
+
+}
+.navbar{
+    height: 60px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+
+
+#job-animation::before{
+    content: '';
+    animation: job infinite 8s;
+}
+@keyframes job{
+    0%{
+        content: 'Desenvolvedor'
+    }
+   100%{
+        content: 'UI Designer';
+    }
+
+}
+
+.header h1, h3, span{
+    color: white;
+}
+#space-div{
+    height: 25px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    background: linear-gradient(-45deg, #0073bb, #00c2e1, #0d4b74, #f54f5a, #e15d95, #c76ee1, #8c89ec, #7296eb);
+    background-size: 400% 400%;   
+    animation: gradient 10s ease-in-out infinite;
+}
+@keyframes gradient {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.card.teste{
+    width: 100px!important;
+}
+
+#one,
+#two,
+#three{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    background: #272727;
+    width: 10%!important;
+    height: 500px!important;
+    cursor: pointer;
+}
+#one img,
+#two img,
+#three img{
+    width: 128px;
+    margin: 3rem auto;
+    margin-bottom: 1rem;
+}
+#projeto-texto{
+	width: 420px;
+}
+#projeto-texto span {
+    margin-bottom: 27px;
+    max-width: 512px;
+    font-size: 18px;
+    line-height: 32px;
+}
+/* Progress Bar CSS */
+.progress-bar{
+	background: linear-gradient(-45deg, #0073bb, #0d4b74, #00c2e1, #f54f5a, #e15d95, #c76ee1, #8c89ec, #7296eb);
+    background-size: 400% 400%;   
+    animation: progress 10s ease-in-out infinite;
+}
+@keyframes progress {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#button-projeto{
+		cursor: pointer;
+		width: 239px;
+		height: 51px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		color: #ffffff;
+		background-color: #0085c4;
+		border-radius: 6px;
+		border: none;
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+}
+/* Progress Bar CSS */
+hr{
+	background-color: white;;
+}
+
+#instagram{
+	width: 24px;
+	height: 24px;
+	background: url(../media/instagram.png) no-repeat;
+	margin-right: 10px;
+	transition: all .4s ease-in-out;
+}
+#twitter{
+	width: 24px;
+	height: 24px;
+	background: url(../media/twitter.png) no-repeat;
+	margin-right: 10px;
+	transition: all .4s ease-in-out;
+}
+#social li{
+	margin-right: 20px;
+}
+#social a{
+	display: flex;
+}
+#social a:hover{
+	transform: scale(1.1); 
+}
+#gitwar a{
+	transition: all .4s ease-in-out;
+}
+#gitwar a:hover{
+	transform: scale(1.1);
+}
